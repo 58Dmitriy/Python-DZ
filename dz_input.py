@@ -43,7 +43,6 @@ elif like_prog.upper() == "НЕТ":
     users_info()
     sys.exit()
 
-
 print(f"{name}, теперь, когда мы познакомились, давай выполним пример: (x > y - 2)")
 while True:
     x = input("Введи переменную x: ")
