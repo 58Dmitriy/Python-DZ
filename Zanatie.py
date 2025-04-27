@@ -48,10 +48,76 @@
 # a = 1
 # b = 10
 # print(a > x < b)
+#
+# # Списки (list)
+# my_List = ["Строка", 57, 5.5, True]
+# print(my_List)
+# print(my_List[3])
+# print(my_List[2:4])
+# print(my_List[2:])
 
-# Списки (list)
-my_List = ["Строка", 57, 5.5, True]
-print(my_List)
-print(my_List[3])
-print(my_List[2:4])
-print(my_List[2:])
+# # Кортежи (tuples)
+# my_Tuple = (78, 89.9, True, False, "Строчка")
+# print(my_Tuple)
+# print(my_Tuple[0])
+# print(my_Tuple[4])
+# print(my_Tuple[2:5])
+# print(my_Tuple[1:])
+
+# # Словари (dictionary)
+# my_Dict = {"name": "Дмитрий", "role": "QA", 123: "test", 456: 10.5 }
+# print(my_Dict["name"])
+# print(my_Dict[123])
+# print(my_Dict[456])
+# print(my_Dict.keys())
+# # print(my_Dict.values())
+# # # print(my_Dict[0]) # будет ошибка, так как нет ключа 0
+#
+# my_Dict = {
+#     "name_2": "Дмитрий",
+#     "role": "QA",
+#     123: "test",
+#     456: 10.5
+# }
+# print(my_Dict)
+# print(my_Dict.keys())
+# print(my_Dict.values())
+#
+# # Множества (Sets)
+# my_List = [1, 2, 3, 2, 4, 5, 6, 1, 7]
+# my_Set = set(my_List)
+# print(my_Set)
+#
+# my_List = ["Добрый", "добрый", "день", "день"] # верхний и нижний регистры это разные вещи
+# my_Set = set(my_List)
+# print(my_Set)
+#
+# # Преобразование данных
+# a = 5.67
+# a = int(a)
+# print(a)
+#
+# a = str(a)
+# print(a+"5")
+# a = float(a)
+# print(a)
+#
+# a = "Привет мир!"
+# print(a[3]) # Обращение по индексам к строкам
+# a = list(a)
+# print(a)
+# a = set(a)
+# print(a)
+#
+# print(ord("A"))
+# print(chr(1072))
+#
+# print(f"\\u{ord("a"):04x}") # Юникод кодировка
+
+a = 5
+b = 10
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(a % b)

@@ -1,4 +1,12 @@
 import sys
+
+def users_info():
+    user_info = dict(user_name=name, user_age=age, user_response=like_prog)
+    # Ниже лежащий блок для проверки полученных значений в словаре
+    print(user_info)
+    print(user_info.keys())
+    print(user_info.values())
+
 print("Привет, пользователь! Расскажи о себе")
 while True:
     name = input("Как тебя зовут? ")
@@ -8,7 +16,7 @@ while True:
 print(f"Приятно познакомиться, {name} ")
 
 while True:
-    age = input(f"{name}, сколько тебе лет? ")
+    age = input(f"{name}, сколько тебе лет? Введи возраст цифрой: ")
     if len(age) != 0:
         break
 age = int(age)
@@ -32,7 +40,9 @@ if like_prog.upper() == "ДА":
 elif like_prog.upper() == "НЕТ":
     print(f"{name},очень печально это слышать.")
     print("Значит нам не по пути( ")
+    users_info()
     sys.exit()
+
 
 print(f"{name}, теперь, когда мы познакомились, давай выполним пример: (x > y - 2)")
 while True:
@@ -50,3 +60,5 @@ y = int(y)
 primer = ( x > y - 2)
 print(f"Результат примера: {primer}")
 print("Продолжение следует в следующих сериях...")
+
+users_info()
