@@ -1,3 +1,4 @@
+import math
 # Ввод значения от пользователя и преобразование в число
 # b = int(input('Введи 2 число: '))
 # a = int(input('Введи 1 число: '))
@@ -114,10 +115,17 @@
 #
 # print(f"\\u{ord("a"):04x}") # Юникод кодировка
 
-a = 5
-b = 10
-print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
-print(a % b)
+# a = 5
+# b = 10
+# print(a + b)
+# print(a - b)
+# print(a * b)
+# print(a / b)
+# print(a % b)
+
+# Математические функции math
+print(math.ceil(5.7)) # Округляет в большую сторону
+print(math.ceil(5.2))
+print(math.floor(5.2)) # Округляет в меньшую сторону
+print(math.floor(5.8))
+print(math.sqrt(25)) # Найти квадратный корень из 25
