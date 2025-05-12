@@ -200,10 +200,20 @@ print("------------")
 
 year = abs(int(input("Введите год в формате ГГГГ: ")))
 month = abs(int(input("Введите порядковый номер месяца от 1 до 12: ")))
+
 month_28 = [2]
 month_29 = [2]
 month_30 = [4,6,9,12]
 month_31 = [1,3,5,7,8,10,11]
+
+def coincidence ():
+    for m in month_30:
+        if month == m:
+            print(f"В {month} месяце 30 дней")
+
+    for j in month_31:
+        if month == j:
+            print(f"В {month} месяце 31 дней")
 
 if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
     print(f"{year} год високосный")
@@ -211,26 +221,15 @@ if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
         if month == u:
             print(f"В {month} месяце 29 дней")
 
-    for m in month_30:
-        if month == m:
-            print(f"В {month} месяце 30 дней")
+    coincidence()
 
-    for j in month_31:
-        if month == j:
-            print(f"В {month} месяце 31 дней")
 else:
     print(f"{year} год не високосный")
     for i in month_28:
         if month == i:
             print(f"В {month} месяце 28 дней")
 
-    for m in month_30:
-        if month == m:
-            print(f"В {month} месяце 30 дней")
-
-    for j in month_31:
-        if month == j:
-            print(f"В {month} месяце 31 дней")
+    coincidence()
 
 print("------------")
 # Практика 10
