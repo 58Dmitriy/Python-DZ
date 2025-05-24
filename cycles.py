@@ -115,6 +115,7 @@ for i in spisok:
 new_spisok.sort()
 print(new_spisok)
 
+
 # Задача №12
 name = input("Введите своё имя: ")
 nik_name = ["Мавпродош", "Лорнектиф", "Древерол", "Фиригарпиг", "Клодобродыч"]
