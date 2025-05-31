@@ -130,14 +130,14 @@ from itertools import count
 # Ниже представлен пример работы «чистильщика строк»,
 # которому срочно требуется ваша помощь.
 
-letters = 'ЫгВЫоЯСремДШНККАыкЩЙФа'.lower()
-print(letters)
+# letters = 'ЫгВЫоЯСремДШНККАыкЩЙФа'.lower()
+# print(letters)
 
 # или
 
-letters = 'ЫгВЫоЯСремДШНККАыкЩЙФа'
-lower_letters = letters.lower()
-print(lower_letters)
+# letters = 'ЫгВЫоЯСремДШНККАыкЩЙФа'
+# lower_letters = letters.lower()
+# print(lower_letters)
 
 # Задача №12
 # name = input("Введите своё имя: ")
@@ -150,3 +150,4 @@ print(lower_letters)
 #     key = False
 #     while key != True:
 #         print("Тут ничего нет. Еще есть вопросы?")
+
