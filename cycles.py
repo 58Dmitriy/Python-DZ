@@ -13,124 +13,140 @@ from itertools import count
 # Задача №1
 # задача о четных числах: Напишите программу,
 # которая выводит все четные числа от 1 до 50
-for x in range(2,51,2):
-    print(x)
+# for x in range(2,51,2):
+#     print(x)
 
 # Задача №2
 # задача о сумме чисел: Напишите программу,
 # которая считает сумму всех чисел от 1 до 100
-start = 0
-end = 100
-a = start
-s = 0
-
-while a < 100+1:
-    s += a
-    a = a + 1
-print("Сумма:", s)
+# start = 0
+# end = 100
+# a = start
+# s = 0
+#
+# while a < 100+1:
+#     s += a
+#     a = a + 1
+# print("Сумма:", s)
 
 # Задача №3
 # Задача о проверке простого числа: Напишите программу,
 # которая проверяет, является ли заданное число простым.
-number  = int(input("Введите число: "))
-is_prime = True
-
-if number < 2:
-    is_prime = False
-else:
-    for i in range(2, number):
-        if number % 1 == 0:
-            is_prime = True
-            break
-if is_prime:
-    print("Число простое")
-else:
-    print("Число не простое")
+# number  = int(input("Введите число: "))
+# is_prime = True
+#
+# if number < 2:
+#     is_prime = False
+# else:
+#     for i in range(2, number):
+#         if number % 1 == 0:
+#             is_prime = True
+#             break
+# if is_prime:
+#     print("Число простое")
+# else:
+#     print("Число не простое")
 
 # Задача №4
 # Задача о факториале числа: Напишите программу,
 # которая вычисляет факториал заданного числа.
-n  = int(input("Введите число: "))
-result = 1
-for i in range(2, n+1):
-    result *= i
-print(result)
+# n  = int(input("Введите число: "))
+# result = 1
+# for i in range(2, n+1):
+#     result *= i
+# print(result)
 
 # Задача №5
 # Задача о числах Фибоначчи: Напишите программу,
 # которая выводит первые 10 чисел Фибоначчи.
-j = 0
-k = 1
-for _ in range (10):
-    print(j)
-    j, k = k, j + 1
+# j = 0
+# k = 1
+# for _ in range (10):
+#     print(j)
+#     j, k = k, j + 1
 
 # Задача №6
 # Задача о выводе чисел в обратном порядке: Напишите программу,
 # которая выводит числа от 10 до 1 в обратном порядке.
-for i in range(10,0, -1):
-    print(i)
+# for i in range(10,0, -1):
+#     print(i)
 
 # Задача №7
 # Задача о подсчете гласных букв: Напишите программу,
 # которая считает количество гласных букв в заданной строке.
-vowels = ["а", "у", "о", "и", "э", "ы", "я", "ю", "е", "ё"]
-text = input("Введите любой текст: ")
-counter = 0
-for i in text:
-    if i in vowels:
-        counter += 1
-print(counter)
+# vowels = ["а", "у", "о", "и", "э", "ы", "я", "ю", "е", "ё"]
+# text = input("Введите любой текст: ")
+# counter = 0
+# for i in text:
+#     if i in vowels:
+#         counter += 1
+# print(counter)
 
 # Задача №8
 # Задача о сумме цифр числа: Напишите программу,
 # которая считает сумму цифр заданного числа.
-num11 = input("Введи целое число: ")
-total = 0
-for digit in num11:
-    total += int(digit)
-print(f"Сумма чисел: ")
+# num11 = input("Введи целое число: ")
+# total = 0
+# for digit in num11:
+#     total += int(digit)
+# print(f"Сумма чисел: ")
 
 
 # Задача №9
 # Задача о выводе таблицы умножения: Напишите программу,
 # которая выводит таблицу умножения от 1 до 10.
-n = int(input('Введите n: '))
-for t in range(1, 11):
-    for y in range(1, 11):
-        print(f'{t} * {y} = {t*y}')
-    print()
+# n = int(input('Введите n: '))
+# for t in range(1, 11):
+#     for y in range(1, 11):
+#         print(f'{t} * {y} = {t*y}')
+#     print()
 
 # Задача №10
 # На вход программа получает список из целых чисел.
 # Результатом работы функции должен стать новый список,
 # в котором содержатся только те числа, которые больше 5 по модулю.
-print("Введите три целых числа")
-q = abs(int(input("Первое число: ")))
-w = abs(int(input("Второе число: ")))
-e = abs(int(input("Третье число: ")))
-spisok = [q, w, e]
-new_spisok = []
-for i in spisok:
-    if i > 5:
-        new_spisok.append(i)
-new_spisok.sort()
-print(new_spisok)
+# print("Введите три целых числа")
+# q = abs(int(input("Первое число: ")))
+# w = abs(int(input("Второе число: ")))
+# e = abs(int(input("Третье число: ")))
+# spisok = [q, w, e]
+# new_spisok = []
+# for i in spisok:
+#     if i > 5:
+#         new_spisok.append(i)
+# new_spisok.sort()
+# print(new_spisok)
 
 # или
 
-number_20 = [3, -10, 6, -3, 4, 60]
-result2 = [x for in number_20 if abs(x) > 5]
-print(result2)
+# number_20 = [3, -10, 6, -3, 4, 60]
+# result2 = [x for in number_20 if abs(x) > 5]
+# print(result2)
+
+# Задача №11
+# Евгению предоставили строку, состоящую из русских букв разных регистров,
+# и попросили очистить ее от заглавных литер.
+# Как ему показалось, он написал верный код, но результат совсем не порадовал.
+# Ниже представлен пример работы «чистильщика строк»,
+# которому срочно требуется ваша помощь.
+
+letters = 'ЫгВЫоЯСремДШНККАыкЩЙФа'.lower()
+print(letters)
+
+# или
+
+letters = 'ЫгВЫоЯСремДШНККАыкЩЙФа'
+lower_letters = letters.lower()
+print(lower_letters)
 
 # Задача №12
-name = input("Введите своё имя: ")
-nik_name = ["Мавпродош", "Лорнектиф", "Древерол", "Фиригарпиг", "Клодобродыч"]
-key = ()
-if name in nik_name:
-    key = True
-    print(f"Ты – свой. Приветствую, любезный {name}!")
-else:
-    key = False
-    while key != True:
-        print("Тут ничего нет. Еще есть вопросы?")
+# name = input("Введите своё имя: ")
+# nik_name = ["Мавпродош", "Лорнектиф", "Древерол", "Фиригарпиг", "Клодобродыч"]
+# key = ()
+# if name in nik_name:
+#     key = True
+#     print(f"Ты – свой. Приветствую, любезный {name}!")
+# else:
+#     key = False
+#     while key != True:
+#         print("Тут ничего нет. Еще есть вопросы?")
