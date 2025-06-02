@@ -152,11 +152,11 @@ from itertools import count
 #         print("Тут ничего нет. Еще есть вопросы?")
 
 # Задача №13
-alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
-for position in range(11):
-    print("^" * 27)
-    for letter in alphabet:
-        if alphabet.index(letter) % 11 == position:
-            print("| ", letter.upper(), letter, " |", end="")
-    print()
-print("^" * 27)
+# alphabet = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+# for position in range(11):
+#     print("^" * 27)
+#     for letter in alphabet:
+#         if alphabet.index(letter) % 11 == position:
+#             print("| ", letter.upper(), letter, " |", end="")
+#     print()
+# print("^" * 27)
