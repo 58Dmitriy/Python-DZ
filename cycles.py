@@ -160,3 +160,13 @@ from itertools import count
 #             print("| ", letter.upper(), letter, " |", end="")
 #     print()
 # print("^" * 27)
+
+# Задача №14
+# num = int(input("Введите число: "))
+# itog = set()
+# for i in range(1, int(num**0.5)+1):
+#     if num % i == 0:
+#         itog.add(i)
+#         itog.add(num // i)
+# result = sorted(itog)
+# print(result)

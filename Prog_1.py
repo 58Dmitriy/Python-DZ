@@ -33,9 +33,11 @@ print(f"Самое длинное слово: {(max(words, key=len))}")
 #Вывод искомого слова и количество раз встреч его повторений
 print(f"Слово {repetitions} встречается: {text.count(repetitions)} раз(а)")
 
+print("__________________________")
 print(only_letters)
 print(v)
 print(c)
+print(words)
 
 
 
