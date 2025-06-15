@@ -87,34 +87,74 @@ import math
 # Найти периметр треугольника, заданного координатами своих вершин.
 # (Определить функцию для расчета длины отрезка по координатам его вершин.)
 
-def side_lengths ():
-    global ab
-    global bc
-    global ca
-    xa = int(input("Введите координату х вершины А: "))
-    ya = int(input("Введите координату y вершины А: "))
-    xb = int(input("Введите координату х вершины B: "))
-    yb = int(input("Введите координату y вершины B: "))
-    xc = int(input("Введите координату х вершины C: "))
-    yc = int(input("Введите координату y вершины C: "))
-    ab = round(math.sqrt(((xb - xa) ** 2 + (yb - ya) ** 2)), 2)
-    bc = round(math.sqrt(((xc - xb) ** 2 + (yc - yb) ** 2)), 2)
-    ca = round(math.sqrt(((xc - xa) ** 2 + (yc - ya) ** 2)), 2)
+# def side_lengths ():
+#     global ab
+#     global bc
+#     global ca
+#     xa = int(input("Введите координату х вершины А: "))
+#     ya = int(input("Введите координату y вершины А: "))
+#     xb = int(input("Введите координату х вершины B: "))
+#     yb = int(input("Введите координату y вершины B: "))
+#     xc = int(input("Введите координату х вершины C: "))
+#     yc = int(input("Введите координату y вершины C: "))
+#     ab = round(math.sqrt(((xb - xa) ** 2 + (yb - ya) ** 2)), 2)
+#     bc = round(math.sqrt(((xc - xb) ** 2 + (yc - yb) ** 2)), 2)
+#     ca = round(math.sqrt(((xc - xa) ** 2 + (yc - ya) ** 2)), 2)
+#
+# def triangle_perimeter():
+#     global ab
+#     global bc
+#     global ca
+#     global p
+#     p = round(ab + bc + ca, 2)
+#
+# ab = 0
+# bc = 0
+# ca = 0
+# p = 0
+# side_lengths()
+# triangle_perimeter()
+# print(f"Длина стороны AB {ab} ед.,\n"
+#       f"длина стороны BC {bc} ед.,\n"
+#       f"длина стороны CA {ca} ед.")
+# print(f"Периметр треугольника ABC {p} ед.")
 
-def triangle_perimeter():
-    global ab
-    global bc
-    global ca
-    global p
-    p = round(ab + bc + ca, 2)
+# Задача №8
+# def is_prime(n):
+#     # spisok = []
+#     if n < 2: return False
+#     for i in range(2, int(n**0.5)+1):
+#         if n % i == 0:
+#             return False
+#     return True
+#
+# primer = []
+# for i in range (100, 1000):
+#     if is_prime(i):
+#         primer.append(i)
+# print(primer)
 
-ab = 0
-bc = 0
-ca = 0
-p = 0
-side_lengths()
-triangle_perimeter()
-print(f"Длина стороны AB {ab} ед.,\n"
-      f"длина стороны BC {bc} ед.,\n"
-      f"длина стороны CA {ca} ед.")
-print(f"Периметр треугольника ABC {p} ед.")
+# Задача №9
+
+# Задача №10
+# numbers = [356, 485, 100000, 99, 447, 12, 6]
+# print(max(numbers))
+
+# Задача №11
+# def exchange(a, c):
+#     b = d = 0
+#     b  = a
+#     d = c
+#     return b, d
+# print(exchange(5, 20))
+
+# Задача №12
+
+def triangle_area(a, b, c):
+    p = a + b + c
+    pp = p / 2
+    s = round(math.sqrt((pp * (pp - a) * (pp - b) * (pp - c))), 3)
+    return p, s
+
+print(triangle_area(5, 7, 9))
+print(triangle_area(3, 4, 5))
