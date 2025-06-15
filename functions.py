@@ -154,7 +154,7 @@ def triangle_area(a, b, c):
     p = a + b + c
     pp = p / 2
     s = round(math.sqrt((pp * (pp - a) * (pp - b) * (pp - c))), 3)
-    return p, s
+    return f"Периметр = {p}, площадь = {s}"
 
 print(triangle_area(5, 7, 9))
 print(triangle_area(3, 4, 5))
