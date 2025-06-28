@@ -16,22 +16,22 @@ while True:
           "5 - если хотите выйти из программы")
     operator = input("Выберите пункт 1-5: ")
     if operator == "1":
-        result = round(num1 + num2, 3)
+        result = (num1 + num2)
         print(result)
         break
 
     elif operator == "2":
-        result = round(num1 - num2, 3)
+        result = (num1 - num2)
         print(result)
         break
 
     elif operator == "3":
-        result = round(num1 * num2, 3)
+        result = (num1 * num2)
         print(result)
         break
 
     elif operator == "4":
-        result = round(num1 / num2, 3)
+        result = (num1 / num2)
         print(result)
         break
 
