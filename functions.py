@@ -150,11 +150,160 @@ import math
 
 # Задача №12
 
-def triangle_area(a, b, c):
-    p = a + b + c
-    pp = p / 2
-    s = round(math.sqrt((pp * (pp - a) * (pp - b) * (pp - c))), 3)
-    return f"Периметр = {p}, площадь = {s}"
+# def triangle_area(a, b, c):
+#     p = a + b + c
+#     pp = p / 2
+#     s = round(math.sqrt((pp * (pp - a) * (pp - b) * (pp - c))), 3)
+#     return p, s
+#
+# tr1 = (triangle_area(5, 7, 10))
+# tr2 = (triangle_area(3, 4, 5))
+# print(f"Сумма периметра треугольника: {tr1[0]} + {tr2[0]} = {tr1[0] + tr2[0]}")
+# print(f"Сумма площадь треугольника: {tr1[1]} + {tr2[1]} = {tr1[1] + tr2[1]}")
 
-print(triangle_area(5, 7, 9))
-print(triangle_area(3, 4, 5))
+# Задача №13
+
+# def trapeciz_p_s(a, b, h):
+#     side =math.sqrt(((a - b) / 2) ** 2 + h ** 2)
+#     p = round(a + b +  2 * side, 2)
+#     s = round((a + b) / 2 * h, 2)
+#     return p, s
+#
+# t1 = trapeciz_p_s(4,10, 3)
+# t2 = trapeciz_p_s(6,15, 5)
+# print(f"Сумма периметра трапеций: {t1[0]} + {t2[0]} = {t1[0] + t2[0]}")
+# print(f"Сумма периметра трапеций: {t1[1]} + {t2[1]} = {t1[1] + t2[1]}")
+
+# Задача №14
+
+# def circle_area(r):
+#     s = round(3.141592654 * r ** 2, 3)
+#     return s
+#
+# def rectangular_area(a, b):
+#     s = a * b
+#     return s
+#
+# def triangle_area (a, h):
+#     s = (a * h) / 2
+#     return s
+#
+# print("1 - круг")
+# print("2 - прямоугольник")
+# print("3 - треугольник")
+# figura = input(f"Выберите фигуру, площадь которой хотите найти: ")
+# if figura == "1":
+#     r = float(input("Введите радиус круга"))
+#     print(circle_area(r))
+# elif figura == "2":
+#     a = float(input("Введите сторону a для прямоугольника"))
+#     b = float(input("Введите сторону a для прямоугольника"))
+#     print(rectangular_area(a, b))
+# elif figura == "2":
+#     a = float(input("Введите сторону треугольника"))
+#     h = float(input("Введите высоту треугольника"))
+#     print(triangle_area(a, h))
+# else:
+#     print("Введена ошибочная команда")
+
+# Задача №16
+
+# def drawing(n, s):
+#     for i in range(1, n + 1):
+#         print(s * n)
+#
+# print(drawing(5, "w" ))
+
+# или
+# def drawing(n, s):
+#     for _ in range(n):
+#         print(n * s)
+#
+# side = int(input("Введите сторону квадрата: "))
+# symbol = input("Введите символ: ")
+# drawing(side, symbol)
+
+# Задача №17
+# def dividers(n):
+#     for i in range(1, int((n/2) + 1)):
+#         if n % i == 0:
+#             print(i, end=" ")
+#     print()
+#
+# while True:
+#     print("0 - остановить программу")
+#     command = int(input("Введите команду 0 для остановки, иначе введите целое число: "))
+#     if command == 0:
+#         break
+#     dividers(command)
+
+# Задача №21
+# def average_assessment(a, b, c, d, e):
+#     assessment = [a, b, c, d, e]
+#     assessment_min = min(assessment)
+#     assessment_max = max(assessment)
+#     av_as = (sum(assessment) - assessment_max - assessment_min) / 3
+#     print(av_as)
+#
+# average_assessment(10,20,30,40,50)
+
+# Задача №19
+
+# def PointInRect (x,y,x1,y1,x2,y2):
+#     return x1 <= x <= x2 and y2 <= y<= y1
+#
+# x = int(input("Введите координату Х исходной точки: "))
+# y = int(input("Введите координату У исходной точки: "))
+#
+# x1 = int(input("Введите координату Х левого верхнего угла прямоугольника: "))
+# y1 = int(input("Введите координату У левого верхнего угла прямоугольника: "))
+# x2 = int(input("Введите координату Х правого нижнего угла прямоугольника: "))
+# y2 = int(input("Введите координату У правого нижнего угла прямоугольника: "))
+#
+# print(PointInRect(x,y,x1,y1,x2,y2))
+
+# Задача №20
+# def s_l(x1, y1, x2, y2):
+#     return ((x2 - x1) ** 2 + (y2 - y1) ** 2)  ** 0.5
+#
+# def tri_area(a, b, c):
+#     p = (a + b + c) / 2
+#     return (p * (p - a) * (p - b) * (p - c)) ** 0.5
+#
+# def pointintriangle(px, py, x1, y1, x2, y2, x3, y3):
+#     # Стороны исходного треугольника АБС
+#     a = s_l(x1, y1, x2, y2)
+#     b = s_l(x2, y2, x3, y3)
+#     c = s_l(x1, y1, x2, y2)
+#     area_abc = tri_area(a, b, c)
+#
+#     # Стороны исходного треугольника PAB
+#     a1 = s_l(px, py, x1, y1)
+#     b1 = s_l(px, py, x2, y2)
+#     c1 = s_l(x1, y1, x3, y3)
+#     area_pab = tri_area(a1, b1, c1)
+#
+#     # Стороны исходного треугольника PBC
+#     a2 = s_l(px, py, x2, y2)
+#     b2 = s_l(px, py, x3, y3)
+#     c2 = s_l(x2, y2, x3, y3)
+#     area_pbc = tri_area(a2, b2, c2)
+#
+#     # Стороны исходного треугольника PCA
+#     a3 = s_l(px, py, x3, y3)
+#     b3 = s_l(px, py, x1, y1)
+#     c3 = s_l(x3, y3, x1, y1)
+#     area_pca = tri_area(a3, b3, c3)
+#
+#     total_area = area_pab + area_pbc + area_pbc
+#
+#     return abs(total_area - area_abc) < 1e-5
+#
+# print(pointintriangle(1,1,0,0,4,0,0,3))
+
+def F(n):
+    print(n)
+    if n > 1:
+        F(n-1)
+        F(n - 3)
+F(6)
