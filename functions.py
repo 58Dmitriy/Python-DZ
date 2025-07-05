@@ -301,9 +301,16 @@ import math
 #
 # print(pointintriangle(1,1,0,0,4,0,0,3))
 
-def F(n):
-    print(n)
-    if n > 1:
-        F(n-1)
-        F(n - 3)
-F(6)
+
+# Задача ДЗ
+# def fibonachi(n):
+#     if n <= 0:
+#         return 0
+#     elif n == 1:
+#         return 1
+#     else:
+#         return fibonachi(n-1) + fibonachi(n-2)
+#
+# n = int(input("Введите номер числа Фибоначчи: "))
+# print(f"{n} - е число Фибоначчи: ", fibonachi(n))
+
